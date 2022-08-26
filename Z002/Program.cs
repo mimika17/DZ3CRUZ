@@ -14,9 +14,9 @@ Double FromAToB()
     int Bx = Convert.ToInt32(Console.ReadLine());
     int By = Convert.ToInt32(Console.ReadLine());
     int Bz = Convert.ToInt32(Console.ReadLine());
-    int x = Ax - Ay;
-    int y = Ay - By;
-    int z = Az - Bz;
+    int x = Bx-Ax;
+    int y = By-Ay;
+    int z = Bz-Az;
     double AB = Math.Sqrt(Math.Pow(x, 2) + Math.Pow(y, 2) + Math.Pow(z, 2));
     return AB;
 }
@@ -28,4 +28,3 @@ catch
 {
     Console.WriteLine("введите цифры");
 }
-
